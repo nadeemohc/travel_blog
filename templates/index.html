@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Blog App{% endblock %}</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>My Blog App</h1>
+            </div>
+            <div class="col-md-6 text-right">
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section>
+    <div class="container">
+        <h2 class="text-center">All Blogs</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div>
+                    <h3>Blog Title</h3>
+                    <p>Blog content goes here...</p>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div>
+                    <h3>Another Blog Title</h3>
+                    <p>Another blog content goes here...</p>
+                </div>
+            </div>
+            <!-- Repeat this structure for each blog -->
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p class="text-center">&copy; 2024 My Blog App</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
